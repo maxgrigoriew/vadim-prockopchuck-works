@@ -22,6 +22,12 @@ a:hover{
     text-decoration: none;
     color: $accent-color;
 }
+button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
 
 .btn{
 @extend %roboto-400;
