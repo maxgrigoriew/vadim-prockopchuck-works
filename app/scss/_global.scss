@@ -1,0 +1,101 @@
+body{
+    font-size: 16px;
+    line-height: 1.5;
+     @extend %quicksand-500;
+    color: $devault-color;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a{
+    font-size: 16px;
+    line-height: 26px;
+    @extend %quicksand-500;
+    color: $devault-color;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+}
+a:hover{
+    text-decoration: none;
+    color: $accent-color;
+}
+
+.btn{
+@extend %roboto-400;
+font-size: 16px;
+line-height: 1.5;
+background-color: $accent-color;
+color: #fff;
+padding: 14px 45px 12px;
+display: inline-block;
+text-decoration: none;
+box-shadow: 0px 10px 25px 0px rgba(254, 62, 87, 0.3);
+transition: all 0.5s ease-in-out;
+
+}
+.btn:hover{
+    text-decoration: none;
+    color: $accent-color;
+    background: #fff;
+}
+
+.btn--transparent{
+  background: transparent;
+  color: $title-color;
+  border: 1px solid $accent-color;
+  box-shadow:none;
+  margin: 0 auto;
+}
+
+.title{
+    font-size: 48px;
+    @extend %roboto-700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.subtitle{
+    font-size: 16px;
+    @extend %quicksand-500;
+    margin-bottom: 55px;
+    text-align: center;
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header--404-page{
+    background: #f6f6f6;
+}
+
+.checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+    appearance: none;
+}
+.cuscom-checkbox {
+	position: relative;
+    padding-left: 24px;
+}
+.cuscom-checkbox:before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #8d8d8d;
+	transition: .5s ease-in-out;
+}
+
+.checkbox:checked + .cuscom-checkbox:before {
+	background: $accent-color;
+    border-color: $accent-color;
+}
+
+
+
+

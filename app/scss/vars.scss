@@ -1,0 +1,34 @@
+$devault-color: #9d9d9d;
+$accent-color: #fe3e57;
+$title-color: #29282d;
+
+%roboto-400{
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+%roboto-500{
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+%roboto-700{
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+%quicksand-400{
+    font-family: 'Quicksand';
+    font-weight: 400;
+}
+%quicksand-500{
+    font-family: 'Quicksand';
+    font-weight: 500;
+}
+
+
+
+@function max($numbers...) {
+@return m#{a}x(#{$numbers})
+}
+
+@function min($numbers...) {
+@return m#{i}n(#{$numbers})
+}
